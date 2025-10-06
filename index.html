@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatuxy - 2D Physics Sandbox Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <h1>CREATUXY</h1>
+            <span>Sandbox Adventure</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
+            <label for="theme-toggle" class="toggle-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">COMING SOON</div>
+            <h2>CREATE. EXPLORE. DOMINATE.</h2>
+            <h1>WELCOME TO CREATUXY</h1>
+            <p>The ultimate 2D physics sandbox experience where your imagination is the only limit. Build, experiment, and create in a dynamic world filled with possibilities.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('download')">
+                    <i class="fas fa-download"></i>
+                    DOWNLOAD FOR WINDOWS
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('features')">
+                    <i class="fas fa-play-circle"></i>
+                    EXPLORE FEATURES
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Possible Combinations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Creative Possibilities</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Different Objects</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="game-preview">
+                <div class="preview-content">
+                    <div class="pixel-art"></div>
+                    <div class="preview-overlay">
+                        <div class="preview-text">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Live Demo Preview</h3>
+                            <p>Physics simulation in action</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll to explore</span>
+    </div>
+</section>
+
+<section id="features" class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">AMAZING FEATURES</h2>
+            <p class="section-subtitle">Discover what makes Creatuxy the ultimate sandbox experience</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <h3>Advanced Physics</h3>
+                <p>Realistic ragdoll physics, collision detection, and dynamic environment interactions that bring your creations to life</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <h3>Endless Creativity</h3>
+                <p>Spawn objects, create structures, and build your own world with intuitive controls and unlimited possibilities</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Quest System</h3>
+                <p>Complete challenges, defeat monsters, and earn rewards in our engaging and dynamic quest system</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3>Dynamic World</h3>
+                <p>Interactive environment that responds to your actions and creations in real-time with stunning effects</p>
+            </div>
+            <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-backpack"></i>
+                    </div>
+                    <h3>Inventory System</h3>
+                    <p>Collect items, manage inventory, and use powerful tools to enhance your gameplay experience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Visual Effects</h3>
+                    <p>Stunning particle effects including explosions, magic spells, and environmental interactions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">GET CREATUXY NOW</h2>
+                <p class="section-subtitle">Start your sandbox adventure today</p>
+            </div>
+            <div class="download-content">
+                <div class="download-info">
+                    <div class="download-badge">
+                        <i class="fab fa-windows"></i>
+                        WINDOWS VERSION
+                    </div>
+                    <h3>READY TO CREATE?</h3>
+                    <p>Download Creatuxy now and unleash your creativity in the ultimate 2D physics sandbox!</p>
+                    
+                    <div class="feature-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No installation required</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Instant gameplay</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Regular updates</span>
+                        </div>
+                    </div>
+
+                    <div class="system-requirements">
+                        <h4>System Requirements</h4>
+                        <div class="requirements-grid">
+                            <div class="requirement">
+                                <i class="fas fa-desktop"></i>
+                                <span>Windows 7/8.1/10/11 32bit/64-bit</span>
+                            </div>
+                            <div class="requirement">
+                                <i class="fas fa-microchip"></i>
+                                <span>1.5 GHz Dual Core Processor</span>
+                            </div>
+                            <div class="requirement">
+                                <i class="fas fa-memory"></i>
+                                <span>2 GB RAM</span>
+                            </div>
+                            <div class="requirement">
+                                <i class="fas fa-hdd"></i>
+                                <span>200 MB Available Storage</span>
+                            </div>
+                            <div class="requirement">
+                                <i class="fas fa-gamepad"></i>
+                                <span>DirectX 11 Compatible Graphics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-box">
+                    <div class="download-header">
+                        <div class="version-info">
+                            <span class="version">Version 1.0</span>
+                            <span class="release-status">Available Soon</span>
+                        </div>
+                        <div class="platform">
+                            <i class="fab fa-windows"></i>
+                            Windows
+                        </div>
+                    </div>
+                    
+                    <div class="download-main">
+                        <div class="download-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <button class="download-btn" onclick="showComingSoon()">
+                            DOWNLOAD CREATUXY
+                        </button>
+                        <div class="file-info">
+                            <span>File Size: To be determined</span>
+                        </div>
+                    </div>
+                    
+                    <div class="download-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Virus Free</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <span>No Installation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Auto Updates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>CREATUXY</h3>
+                        <p>The ultimate 2D physics sandbox adventure where creativity meets physics</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" onclick="showComingSoon()">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" onclick="showComingSoon()">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-link" onclick="showComingSoon()">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#" onclick="showComingSoon()">Documentation</a></li>
+                        <li><a href="#" onclick="showComingSoon()">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="showComingSoon()">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showComingSoon()">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Creatuxy Sandbox Game. All rights reserved. | Crafted with <i class="fas fa-heart"></i> for gamers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Under Development</h2>
+            <p>Creatuxy is currently in active development and will be available for download soon!</p>
+            <p>We're working hard to bring you the best sandbox experience.</p>
+            <button class="btn-primary" onclick="closeModal()">
+                <i class="fas fa-check"></i>
+                UNDERSTOOD
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
